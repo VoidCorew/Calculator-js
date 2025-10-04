@@ -125,7 +125,7 @@ body {
 
 .equals {
   grid-row: span 2;
-  aspect-ratio: 1/2;
+  /* aspect-ratio: 1/2; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -133,8 +133,96 @@ body {
 
 .zero {
   grid-column: span 2;
-  aspect-ratio: 2/1;
+  /* aspect-ratio: 2/1;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
+}
+
+/* ================================================= */
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .calculator-wrapper {
+    padding: 15px;
+    gap: 20px;
+    max-width: 100%;
+  }
+
+  .calculator-top {
+    padding: 12px;
+  }
+
+  .calculator-input {
+    font-size: 18px;
+    padding: 6px 0;
+  }
+
+  .calculator-answer {
+    font-size: 28px;
+  }
+
+  .calculator-bottom {
+    /* gap: 10px; */
+    width: 100%;
+  }
+
+  .button-small {
+    padding: 6px 4px;
+    font-size: 12px;
+    min-height: 35px;
+    border-radius: 8px;
+  }
+
+  .button-medium {
+    font-size: 20px;
+    padding: 12px 8px;
+    min-height: 50px;
+    border-radius: 12px;
+  }
+
+  .button-large {
+    font-size: 20px;
+    padding: 12px 8px;
+    min-height: 50px;
+    border-radius: 12px;
+  }
+
+  .equals {
+    min-height: 110px;
+    /* 50px + 50px + 10px gap */
+  }
+}
+
+@media (max-width: 320px) {
+  .calculator-wrapper {
+    padding: 10px;
+    gap: 15px;
+  }
+
+  .calculator-bottom {
+    /* gap: 8px; */
+  }
+
+  .button-medium,
+  .button-large {
+    font-size: 18px;
+    padding: 10px 6px;
+    min-height: 45px;
+  }
+
+  .button-small {
+    font-size: 11px;
+    min-height: 30px;
+  }
+
+  .equals {
+    min-height: 98px;
+    /* 45px + 45px + 8px gap */
+  }
 }

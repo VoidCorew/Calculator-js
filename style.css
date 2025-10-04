@@ -174,28 +174,51 @@ body {
 
   .button-small {
     padding: 6px 4px;
-    font-size: 12px;
+    /* font-size: 12px; */
     min-height: 35px;
     border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .button-medium {
-    font-size: 20px;
+    /* font-size: 20px; */
     padding: 12px 8px;
     min-height: 50px;
     border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .button-large {
-    font-size: 20px;
+    /* font-size: 20px; */
     padding: 12px 8px;
     min-height: 50px;
     border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .equals {
     min-height: 110px;
     /* 50px + 50px + 10px gap */
+  }
+}
+
+@media (max-width: 390px) {
+  .button-large {
+    font-size: 20px;
+  }
+
+  .button-medium {
+    font-size: 25px;
+  }
+
+  .button-small {
+    font-size: 17px;
   }
 }
 
